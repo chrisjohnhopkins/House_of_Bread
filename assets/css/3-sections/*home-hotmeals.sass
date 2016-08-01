@@ -1,0 +1,395 @@
+section.hotmeals
+  background-color: rgba(0, 0, 0, 1)
+  background:
+    image: url(/assets/img/hotmeals-bg.jpg)
+    size: contain
+
+    position: center
+    size: cover
+  //padding-bottom: 50px
+
+  .banner-logo
+    +hide-text
+    max-width: 200px
+    background:
+      image: url(/assets/img/logo.svg)
+      repeat: no-repeat
+      position: center
+      size: contain
+    min-height: 125px
+    max-height: 300px
+    margin: auto
+    margin-bottom: 20px
+    margin: auto
+    padding: 0px
+
+  .border-bottom
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2)
+
+  .map
+    height: 200px
+    width: 200px
+    margin-right: 55px
+    float: right
+  .heading-float
+    float: left
+    text-align: left
+    color: #f7941e
+    font-size: 30px
+  .heading-no-float
+    text-align: left
+    color: #f7941e
+    font-size: 30px
+    //margin-top: 50px
+
+  .heading-services
+    text-align: left
+    color: #f7941e
+    font-size: 30px
+    padding-top: 15px
+    padding-bottom: 15px
+    border-top: 1px solid rgba(0, 0, 0, 0.1)
+
+
+  address
+    color: white
+    font-size: 18px
+  .venue
+    padding-top: 15px
+    padding-bottom: 15px
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2)
+    border-top: 1px solid rgba(0, 0, 0, 0.2)
+  .when
+    padding-top: 15px
+    padding-bottom: 15px
+    float: right
+    //border-top: 1px dashed #118cc1
+  .welcome
+    padding-top: 15px
+    padding-bottom: 15px
+    //border-bottom: 1px dashed #118cc1
+    margin-bottom: 15px
+  .where
+    padding-top: 5px
+  .read-more
+
+  .logo-container
+    height: 260px
+    width: 260px
+    border-radius: 50%
+    position: relative
+    margin: auto
+    background:
+      color: rgba(238, 238, 238, 0.1)
+    position: relative
+    //left: -20px
+
+  .logo-hot
+    height: 270px
+    width: 270px
+    border-radius: 50%
+    background:
+      //color: rgba(0, 0, 0, 0.6)
+      image: url(/assets/img/logo.svg)
+      repeat: no-repeat
+      position: center 100px
+      bottom: 10px
+      left: 40px
+      //size: contain
+    position: relative
+    left: -20px
+    margin: auto
+
+
+
+
+
+
+
+
+  .services
+    overflow: hidden
+    margin: auto
+    //border-bottom: 1px dashed white
+    margin-bottom: 20px
+
+    //margin-top: 50px
+
+  .icon-space
+    margin: auto
+    width: 560px
+
+
+
+  .services .icon
+    text-align: center
+    float: center
+    margin-right: auto
+    margin-left: auto
+    list-style: none
+    display: block
+    width: 21%
+    float: left
+    align-items: center
+    //margin: auto
+    margin-bottom: 30px
+
+  @media (max-width: 775px)
+    .services
+      .icon
+        width: 40%
+
+    //.hot-img
+      height: 165px
+      width: 250px
+
+
+
+  .left
+    display: block
+
+  .outer
+    height: 100px
+    width: 100px
+    border-radius: 50%
+    background-color: black
+    margin-top: 5px
+    margin: auto
+  .inner
+    height: 90px
+    width: 90px
+    border-radius: 50%
+    background-color: white
+    align-items: center
+    margin-left: 5px
+    position: relative
+    top: 5px
+
+  .icon-knifefork
+    height: 80px
+    width: 80px
+    //border-radius: 50%
+    background:
+      image: url(../img/knifefork.svg)
+      position: center
+      size: cover
+    position: relative
+    margin-left: 3px
+    top: 5px
+
+  .icon-friendship
+    height: 80px
+    width: 80px
+    //border-radius: 50%
+    background:
+      image: url(../img/friendship.svg)
+      position: center
+      size: cover
+    position: relative
+    margin-left: 5px
+    top: 5px
+
+  .icon-advice
+    height: 70px
+    width: 70px
+    //border-radius: 50%
+    background:
+      image: url(../img/advice.svg)
+      position: center
+      size: cover
+    position: relative
+    margin-left: 5px
+    top: 10px
+
+  .icon-support
+    height: 70px
+    width: 70px
+    //border-radius: 50%
+    background:
+      image: url(../img/support.svg)
+      position: center
+      size: cover
+    position: relative
+    margin-left: 5px
+    top: 10px
+  .seperator
+    border-right: 1px dashed white
+
+
+  .transparent-box
+    background-color: rgba(0, 0, 0, 0.6)
+    padding-top: 30px
+    padding-bottom: 30px
+
+
+  //h3
+    color: blue
+    font-size: 25px
+    bottom: 10px
+    //margin-right: 3px
+    //background-color: black
+
+
+
+
+
+
+
+
+  //typography
+
+  p
+    color: white
+    font-size: 18px
+    text-align: left
+  .venue-info
+    color: white
+    list-style: none
+    font-size: 23px
+    margin-bottom: 1px white dashed
+      //margin-left: 30px
+  li
+    margin: 0
+  p.home-leadout
+    text-align: left
+    padding-top: 10px
+  p.secondpara
+    border:
+      top: 2px solid #118cc1
+      bottom: 2px solid #118cc1
+    padding: 10px
+    font-size: 25px
+
+  h2
+    text-align: left
+    //font-family: inherit
+    //border-top: 1px dashed white
+    //border-bottom: 1px solid white
+    font-size: 35px
+    margin-top: 0px
+    margin-bottom: 10px
+    color: #f7941e
+    padding-top: 30px
+    padding-bottom: 5px
+    //font-style: italic
+
+
+  h3
+    color: white
+    font-size: 20px
+    border: 1px black
+    //position: relative
+    text-align: center
+    margin: auto
+    text-align: center
+    padding-top: 25px
+
+  .right-col-heading
+    text-align: center
+    margin: auto
+    padding-bottom: 10px
+    color: #f7941e
+  .left-col
+    margin: auto
+
+  .highlightorange
+    color: #f7941e
+    font-weight: bold
+
+  .highlightblue
+    color: #f7941e
+    font-weight: bold
+
+  .home-leadout
+    font-size: 40px
+    display: block
+    width: 100%
+    padding-bottom: 75px
+    margin-bottom: 0px
+    text-align: left
+    //margin-right: 10px
+    margin-top: 10px
+  .home-lead
+    font-size: 18px
+    color: white
+    padding-top: 0px
+
+  .home-cta
+    max-width: 75%
+    margin: auto
+    color: black
+    font-size: 30px
+    position: relative
+    //top: 20px
+    margin-bottom: 30px
+
+  a, .home-cta
+    margin-bottom: 80px
+
+  .parragraph-link
+    font-style: italic
+    color: #f7941e
+    font-size: 15px
+
+  .circle
+    height: 100px
+    width: 100px
+    border-radius: 50%
+    background-color: blue
+
+
+
+
+
+
+  .icon-space
+    max-width: 580px
+    margin: auto
+
+  ul
+    margin: auto
+
+
+@media (max-width: 775px)
+  section.hotmeals
+    p,
+      margin-left: 5%
+      margin-right: 5%
+      text-align: left
+    h2
+      size: 30px
+      text-align: center
+
+    h3
+      font-size: 18px
+      margin-left: 5%
+      margin-right: 5%
+      font-style: italic
+      padding-bottom: 25px
+    .home-leadout
+      font-size: 32px
+      padding-bottom: 50px
+      text-align: center
+      margin-left: 5%
+      margin-right: 5%
+
+    .col-1
+      margin: auto
+
+    ul.venue-info
+      margin-left: auto
+    .map
+      height: 150px
+      width: 150px
+      display: block
+      float: none
+      margin-left: 5%
+      margin-right: 5%
+    //.when
+      margin-top: 50px
+
+    .logo-container
+      margin-bottom: 50px
+    .logo-hot
+      background:
+        position: center 120px

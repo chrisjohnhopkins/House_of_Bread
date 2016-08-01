@@ -1,0 +1,15 @@
+name: House of Bread
+highlighter: rouge
+markdown: kramdown
+kramdown:
+  input: GFM
+  auto_ids: true
+  syntax_highlighter: rouge
+exclude: ["node_modules", "gulpfile.js", "package.json"]
+tag_page_layout: tag_page
+tag_page_dir: tag
+excerpt_separator: <!–break–>
+gems:
+  - jekyll-feed
+
+url: http://s0nicy0uth.github.io

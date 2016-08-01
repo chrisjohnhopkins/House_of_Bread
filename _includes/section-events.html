@@ -1,0 +1,5 @@
+<section id="events" class="events"><div class="flex flex--center"><div class="col-2"><p class="home-leadout">...House of Bread Events...</p><a href="" class="rss"></a><h3>Up Coming Events...</h3><ul>{% for post in site.categories.events %}
+{% assign curr_date = site.time | date: "%Y-%m-%d" %}
+{% if curr_date < post.expires %}<li><div class="post"><div class="post-title"><a href="{{ post.url }}"><h2 class="title">{{ post.title }}</h2>
+<h5>{{ post.venue }}, <span class="date">{{ post.eventdate | date: '%B %d, %Y' }}</span></h5></div><div class="post-data"><div class="post-image"><img src="{{post.cover}}" style="width: 140px" align="center" class="post-image"/></div><div class="post-excerpt"><p class="excerpt"> {{ post.excerpt }} </p></a></div></div></div></li>{% endif %}
+{% endfor %}</ul><h3>Weekly Events...</h3></div></div><div class="flex flex--center"><div class="col-1"><a href="" class="home-cta">HoB Events</a></div></div></section>

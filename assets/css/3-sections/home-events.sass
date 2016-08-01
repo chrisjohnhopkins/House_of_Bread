@@ -1,0 +1,336 @@
+section.newsandevents
+  background:
+    color: #eee
+  
+
+  .carousel
+
+    .item
+      height: 380px
+
+    .fa-chevron-right
+      position: relative
+      display: none
+      left: 590px
+      bottom: 200px
+      font-size: 50px
+      color: #a1a2a1
+      &:hover
+        color: #a1a1a1
+        cursor: pointer
+
+    .fa-chevron-left
+      position: relative
+      color: #a1a1a1
+      top: 230px
+      left: -45px
+      z-index: 1
+      font-size: 50px
+
+
+
+    .post-info
+      height: 400px
+      width: 200px
+      background-color: rgba(0, 0, 0, 0.7)
+      position: relative
+      bottom: 400px
+      padding-right: 10px
+
+      .titlespace
+        position: relative
+        display: block
+        width: 200px
+        height: 50%
+        //background-color: pink
+
+
+      h2
+        width: 200px
+        clear: both
+        position: relative
+        top: 20px
+
+
+      .excerptspace
+        display: block
+        //background-color: red
+
+
+
+      .excerpt
+        position: relative
+        color: white
+        margin-left: 10px
+
+      //h2
+        position: relative
+        background-color: rgba(0, 0, 0, 0.7)
+        bottom: 404px
+        padding-left: 10px
+        left: -10px
+        height: 372px
+
+
+
+  ul
+    list-style: none
+  .subscribe
+    height: 50px
+    width: 50px
+    border-radius: 50%
+    border: 1px white solid
+    margin: auto
+    display: block
+    box-shadow: 0px 3px 10px rgba(0,0,0,0.2)
+    margin-bottom: 5px
+
+    &:hover
+      box-shadow: 0px 5px 14px rgba(0,0,0,0.4)
+  .center
+    text-align: center
+    font-style: italic
+    margin-left: 5px
+
+  .post-excerpt
+    display: block
+    float:right
+    //background-color: #118cc1
+    font-size: 15px
+    color: white
+  a
+    padding: 0px
+  .title
+    color: white
+    font-size: 25px
+    padding-top: 10px
+    //margin-right: 0px
+    margin-left: 10px
+    height: 0px
+    margin-top: 0px
+    margin-bottom: 10px
+    width: 500px
+
+  .slick-dots
+    position: absolute
+    bottom: -5px
+    list-style: none
+    display: block
+    text-align: center
+    padding: 0
+    width: 100%
+    margin-right: 10px
+
+  .slick-dots li
+    position: relative
+    display: inline-block
+    height: 20px
+    width: 20px
+    margin: 0 5px
+    padding: 0
+    cursor: pointer
+    //margin-right: 10px
+
+  .slick-dots li button
+    border: 0
+    background: transparent
+    display: block
+    height: 20px
+    width: 20px
+    outline: none
+    line-height: 0
+    font-size: 0
+    color: transparent
+    //padding: 5px
+    cursor: pointer
+    margin-right: 10px
+
+  .slick-dots li button:hover, .slick-dots li button:focus
+    outline: none
+
+  .slick-dots li button:hover:before,
+  .slick-dots li button:focus:before
+    opacity: 1
+
+  .slick-dots li button:before
+    position: absolute
+    top: 0
+    left: 0
+    content: "\2588\2588\2588\2588\2588"
+    width: 20px
+    height: 20px
+    font-family: "slick"
+    font-size: 6px
+    line-height: 20px
+    text-align: center
+    color: black
+    opacity: 0.25
+    -webkit-font-smoothing: antialiased
+    -moz-osx-font-smoothing: grayscale
+
+  .slick-dots li.slick-active button:before
+    color: black
+    opacity: 0.75
+
+  p, a
+    color: rgba(0, 0, 0, 0.9)
+    margin-right: 10px
+
+
+  .post-image
+    float: left
+    padding-left: 5px
+    padding-right: 10px
+    padding-top: 0px
+    //padding-bottom: 50px
+    clear: both
+    position: relative
+    height: auto
+
+  .blog-heading
+    width: 100%
+    height: 80px
+    background-color: rgba(0, 0, 0, 0.9)
+    margin-bottom: 10px
+
+
+
+
+
+  .post
+    background-color: white
+    display: block
+    width: 585px
+    margin-bottom: 30px
+    color: #118cc1
+    padding-left: 0px !important
+    margin: auto
+  ul
+    padding-left: 0px !important
+
+
+  .date
+    font-style: italic
+    color: rgba(247, 148, 30, 0.6)
+    font-size: 15px
+
+
+
+  .post-data
+    background-color: white
+    height: 160px
+    width: 585px
+    margin-left: auto
+
+
+
+
+
+  .post-title
+    background-color: #118cc1
+    height: 80px
+    width: 100%
+
+  .event
+    text-align: center
+
+  .home-cta
+    color: rgba(0, 0, 0, 0.7)
+    margin: auto
+    margin-bottom: 50px
+    margin-top: 50px
+    width: 50%
+    padding: 10px
+
+
+
+
+
+
+  //Typography
+
+  .home-leadout
+    color: #118cc1
+    font-size: 35px
+    text-align: center
+
+  .highlightorange
+    color: #f7941e
+    font-weight: bold
+
+  .heading
+    color: rgba(0, 0, 0, 0.5)
+    text-align: center
+    font-style: italic
+
+  h3
+    color: #f7941e
+    font-style: italic
+
+
+  h5
+    margin-top: 25px
+    margin-bottom: 0px
+    margin-left: 8px
+    font-size: 18px
+    color: rgba(255, 255, 255, 0.6)
+    font-style: italic
+
+  @media (max-width: 640px)
+    .title
+      margin: auto
+      font-size: 15px
+      text-align: center
+      width: 250px
+      height: auto
+
+
+    .post
+      width: 250px
+      //margin: auto
+      margin: auto
+      margin-bottom: 20px
+      height: 400px
+
+    .post-title
+      background-color: #f7941e
+      width: 250px
+      height: auto
+      position: relative
+
+    .date
+      position: relative
+      float: none
+      margin-bottom: 0px
+      margin-right: 18px
+      bottom: 0px
+      text-align: center
+
+
+
+    .post-excerpt
+      display: block
+      float: none
+      padding-top: 5px
+      //background-color: #118cc1
+      font-size: 15px
+      color: white
+      text-align: center
+      height: auto
+
+    .post-image
+      float: none
+      padding-left: 0px
+      padding-right: 0px
+      padding-top: 0px
+      //padding-bottom: 50px
+      //clear: both
+      position:
+      height: auto
+      margin: auto
+      display: block
+      margin-top: 30px
+
+  @media (max-width: 640px)
+    .post
+      right: 15px

@@ -1,0 +1,27 @@
+section.news
+  .flex.flex--center
+    .col-2
+      p.home-leadout ...We update a <span class ="highlightorange">Blog...</span>
+
+      a(href="").rss
+
+
+      ul
+        {% for post in site.categories.news %}
+
+        li
+          .post
+            .post-title
+              <a href="{{ post.url }}"><h2 class="title">{{ post.title }}</h2>
+              <p class="date">{{ post.date | date: '%B %d, %Y' }}</p>
+            .post-data
+              .post-image
+                <img src="{{post.cover}}" style="width: 140px" align="center" class="post-image"/>
+              .post-excerpt
+                <p class="excerpt"> {{ post.excerpt }} </p>
+
+        {% endfor %}
+
+  .flex.flex--center
+    .col-1
+      a(href="").home-cta All News Stories

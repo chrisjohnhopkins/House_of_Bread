@@ -1,0 +1,30 @@
+<!--Header for Blog Posts/Podcasts-->
+
+mixin nav-content()
+  ul.links
+    li: a(href="/index.html") Home
+    li: a(href="/index.html#about") About
+    li: a(href="/index.html#HotMeals") Hot Meals
+    li: a(href="/index.html#FoodBanks") Food Banks
+    li: a(href="#casework") Casework
+    li: a(href="#projects") Projects
+    li: a(href="#volunteer") Help Us
+    li: a(href="/blog.html") News and Events
+    li: a(href="/podcastindex.html") Podcast
+    li: a(href="index.html#shop") Shop
+    li: a(href="/index.html#vlogs") Vlogs
+    li: a(href="/index.html#contact") Contact
+
+.mobile-nav
+  +nav-content()
+
+header
+  .header-position
+    h1.logo House of Bread
+
+    .nav
+      +nav-content()
+
+    a(href="#donate").donate-link //Donate
+
+    .mobile-nav-toggle: span

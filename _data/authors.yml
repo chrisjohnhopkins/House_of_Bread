@@ -1,0 +1,20 @@
+Will:
+  name: Will Morris
+  avatar: /assets/img/will.jpg
+  twitter: Willscribe
+  email: will
+Jack:
+  name: Jack Morris
+  avatar: /assets/img/jack.jpg
+  twitter: major_ricks
+  email: Jack
+Shaun:
+  name: Shaun Hamer
+  avatar: /assets/img/shaun.jpg
+  twitter: Hammish2
+  email: shaun
+HOB:
+  name: House of Bread
+  avatar: /assets/img/logo.svg
+  twitter: hobstafford
+  email: jack

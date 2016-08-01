@@ -1,0 +1,129 @@
+.home-wrap
+  display: flex
+  min-height: 100vh
+  overflow: hidden
+  background-color: #eee
+
+
+  @media (max-width: 775px)
+    display: block
+
+.sections
+  flex: 1
+  overflow: hidden
+
+  section
+    padding-top: 30px
+    position: relative
+    bottom: 0
+    //width: auto
+    padding-bottom: 0.2%
+    margin-bottom: 0
+    //background-color: white
+    //overflow: hidden
+
+
+  section::after
+    content: " "
+    position: absolute
+    bottom: 100%
+    width: 50%
+    height: 30px
+    padding-bottom: inherit
+    background-color: inherit
+    left: 50%
+    -ms-transform-origin: 0 100%
+    -webkit-transform-origin: 0 100%
+    transform-origin: 0 100%
+    -ms-transform: skewX(-45deg)
+    -webkit-transform: skewX(-45deg)
+    transform: skewX(-45deg)
+    margin-bottom: 0
+
+  section::before
+    content: " "
+    position: absolute
+    bottom: 100%
+    width: 50%
+    height: 30px
+    padding-bottom: inherit
+    background-color: inherit
+    right: 50%
+    -ms-transform-origin: 100% 100%
+    -webkit-transform-origin: 100% 100%
+    transform-origin: 100% 100%
+    -ms-transform: skewX(45deg)
+    -webkit-transform: skewX(45deg)
+    transform: skewX(45deg)
+    margin-bottom: 0
+
+  // Flex Classes
+  .flex
+    display: flex
+
+  .flex--center
+    justify-content: center
+
+  .flex--space-around
+    justify-content: space-around
+
+  .order-first
+    order: -1
+
+
+
+
+
+// columns
+.col-1
+  width: 297px
+  padding: 0 10px
+  box-sizing: border-box
+
+.push-right
+  margin-left: 330px
+
+.col-2
+  max-width: 605px
+  padding: 0 10px
+  box-sizing: border-box
+  width: 100%
+
+
+
+.col-50
+  width: 50%
+
+
+
+
+
+@media (max-width: 640px)
+  .home-sections .flex
+    display: block
+
+  .col-1
+    width: 100%
+
+  .col-50
+    width: auto
+
+  .push-right
+    margin-left: 0
+
+//typography
+
+.home-lead
+  font-size: 26px
+  color: white
+  line-height: 1
+  margin-left: 108px
+
+.home-leadout
+  font-size: 26px
+  color: white
+  line-height: 1
+  //margin-left: 108px
+
+  &.outdented
+    text-indent: -0.8em

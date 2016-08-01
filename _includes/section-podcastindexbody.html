@@ -1,0 +1,83 @@
+<section class="podcastindexbody">
+  <div class="flex flex--center">
+    <div class="col-2" id="blog">
+
+        <h2>Latest Episode..</h2>
+          <ul class="blog-posts">
+          {% for post in site.categories.podcasts %}
+          <li class="blog-post">
+            <a href="{{ post.url }}" class="content post">
+              <div class="post-author">
+                <h3 class="title">{{ post.title }}</h3>
+                <p class="post-details">
+                  {{ author.name }}
+                  <span class="date">{{ post.date | date: '%B %d, %Y' }}</span>
+                </p>
+
+                  <img src="{{ post.cover }}" class="featuredcover"></img>
+                  <p class="featuredexcerpt">{{ post.excerpt }} </p>
+                  <audio src="{{ post.episodefile }}" controls class='podcast-index-player'></audio>
+
+              </div>
+            </a>
+
+            </li>
+          {% endfor %}
+        </ul>
+    </div>
+  </div>
+  <div class="flex flex--center">
+    <div class="col-2">
+      <div id="paging_container_events" class="container">
+        <h2 id="Events">Previous Episodes...</h2>
+          <ul class="blog-posts">
+          {% for post in site.categories.events %}
+          {% assign curr_date = site.time | date: "%Y-%m-%d" %}
+          <li class="blog-post">
+            <a href="{{ post.url }}" class="content post">
+              <div class="post-author">
+                <h3 class="title">{{ post.title }}</h3>
+                <p class="post-details">
+                  {{ author.name }}
+                  <span class="date">{{ post.date | date: '%B %d, %Y' }}</span>
+                </p>
+              </div>
+              <p class="excerpt">{{ post.excerpt }} </p>
+            </a>
+            </li>
+
+            {% endfor %}
+
+
+        </ul>
+        <div class="page_navigation"></div>
+      </div>
+
+      <script type="text/javascript">
+        $(document).ready(function(){
+          $('#paging_container_news').pajinate({
+            nav_label_first : '<<',
+					  nav_label_last : '>>',
+					  nav_label_prev : '<',
+					  nav_label_next : '>',
+            items_per_page : 4,
+            num_page_links_to_display : 3
+          });
+        });
+
+        $(document).ready(function(){
+          $('#paging_container_events').pajinate({
+            nav_label_first : '<<',
+					  nav_label_last : '>>',
+					  nav_label_prev : '<',
+					  nav_label_next : '>',
+            items_per_page : 8,
+            num_page_links_to_display : 3,
+          });
+        });
+
+      </script>
+
+  </div>
+  </div>
+</section>

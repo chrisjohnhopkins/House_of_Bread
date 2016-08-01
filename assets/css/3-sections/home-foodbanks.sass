@@ -1,0 +1,416 @@
+section.foodbanks
+  background:
+    //image: url(/assets/img/foodbank2.png)
+    size: cover
+  background-color: #f6a23f
+  height: auto
+
+  //padding: 0px 0px
+
+
+
+  .foodanklogo
+    height: 122px
+    width: 275px
+    background:
+      image: url(/assets/img/foodbank.svg)
+      size: contain
+      repeat: no-repeat
+    margin: auto
+    margin-top: 40px
+    //margin-top: 30px
+    float: right
+
+  .foodanklogomob
+    height: 122px
+    width: 275px
+    background:
+      image: url(/assets/img/foodbank.svg)
+      size: contain
+      repeat: no-repeat
+    display: none
+
+  #firstcolumn
+    background:
+      image: url(/assets/img/foodbank2.png)
+      size: cover
+
+
+
+  .process-col
+    border-left: 1px dashed white
+
+
+
+  //typography
+  p
+    color: white
+    font-size: 18px
+
+  .highlightorange
+    color: #f7941e
+    font-weight: bold
+
+  .highlightblue
+    color: #118cc1
+    font-weight: bold
+
+  .right-col-heading
+    text-align: left
+
+  .home-leadout
+    font-size: 30px
+    //padding-bottom: 30px
+    width: 50%
+    float: left
+    margin-top: 40px
+    margin-bottom: 40px
+    text-align: left
+    color: white
+    //padding-bottom: 110px
+
+
+  .home-lead
+    font-size: 18px
+    color: white
+    padding-top: 0px
+    margin-bottom: 30px
+  .parra
+    font-size: 30px
+    line-height: 0.2
+    font-style: italic
+  a.parra
+    margin-top: 0px
+  .foodbank-process
+    width: 100%
+    //height: 200px
+    li
+      width: 180px
+      float: left
+      margin-right: 10px
+      &:last-child
+        margin-right: 0px
+
+      //margin-right: 50px
+
+  .margin-top
+    margin-top: 50px
+    margin-bottom: 50px
+
+  .foodbank-process, .fbp
+    color: white
+    //width: 100%
+    font-size: 18px
+    //margin-bottom: 30px
+    counter-increment: step-counter
+    //margin: auto
+    list-style: none
+    counter-reset: item -1
+    display: block
+    position: relative
+    //margin-top: 50px
+    margin-bottom: 0px
+    margin-top: 30px
+    //margin-left: 60px
+
+  .foodbank-process, .fbp:before
+    content: counter(step-counter)
+    //font-size: 80%
+    //background-color: rgb(200,200,200)
+    color: white
+    display: block
+    //margin: auto
+    font-weight: bold
+    //padding: 3px 8px
+    border-radius: 3px
+    counter-increment: item
+    padding: 0
+
+  .fbp:before
+    text-align: center
+    border: 2px white solid
+    background:
+      color: #118cc1
+    width: 40px
+    height: 40px
+    line-height: 40px
+    position: relative
+    top: 0px
+    border-radius: 50%
+    margin: auto
+
+  .trolley
+    background:
+      image: url(/assets/img/trolley.svg)
+      size: contain
+    height: 100px
+    width: 100px
+    margin: auto
+
+  .warehouse
+    background:
+      image: url(/assets/img/warehouse.svg)
+      size: contain
+    height: 100px
+    width: 100px
+    margin: auto
+    margin-top: 10px
+
+  .house
+    background:
+      image: url(/assets/img/home.svg)
+      size: contain
+    height: 100px
+    width: 100px
+    margin: auto
+    margin-top: 10px
+
+
+  .step
+    font-size: 15px
+    text-align: center
+    margin-top: 15px
+
+  .left-bottom
+    position: relative
+    bottom: 0px
+
+  .float-left
+    margin-left: 0px
+
+  .essentials
+    float: left
+    width: 50%
+    padding: 0px
+
+    h5
+      text-align: center
+      color: $blue-color
+      font-size: 20px
+      margin-bottom: 10px
+      font-style: italic
+  .essentials, ul, li
+    list-style: none
+    text-align: center
+    padding: 0px
+    margin: auto
+    color: white
+
+  .drop-off-point
+    float: left
+    width: 33%
+    padding: 0px
+    position: relative
+    //margin-right: 5px
+    ul, li
+      width: 190px
+      //position: relative
+    h5
+      color: $blue-color
+      font-size: 18px
+      padding-bottom: 0px
+    ul
+      height: 350px
+      background-color: $orange-color
+      position: relative
+    a
+      position: absolute
+      bottom: 10px
+      left: 58px
+
+
+
+  .bottom
+    width: 50%
+    float: left
+    //margin-left: 10px
+    ul, li
+      width: 190px
+    h5
+      color: $blue-color
+      font-size: 18px
+      height: 40px
+    ul
+      margin-right: 1.5px
+      height: 350px
+      background-color: $orange-color
+      position: relative
+    .right
+      margin-left: 1.5px
+      margin-bottom: 60px
+
+    a
+      position: absolute
+      bottom: 10px
+      left: 58px
+
+  .avatar
+    height: 60px
+    width: 100px
+    border: 20px white solid
+    background-color: white
+
+  .avatarrail
+    height: 80px
+    width: 120px
+    border: 20px white solid
+    background-color: white
+
+
+
+
+
+  .space
+    width: 300px
+    height: 100px
+
+  .mobile-cta
+    display: none
+  .mob-btn
+    display: none
+
+  #mob-lead
+    display: none
+
+  .mobile-blurb
+    display: none
+
+  .col-50
+    margin: auto
+
+  h3, h2
+    text-align: center
+    margin-top: 50px
+
+  h2
+    font-style: normal
+
+  h3
+    font-style: italic
+    color: $blue-color
+
+  p
+    text-align: center
+
+
+  .highlightLink
+    font-style: italic
+
+
+  h2
+    color: white
+    margin-left: 15px
+    font-size: 30px
+    color: #118cc1
+    //text-align: center
+
+@media (max-width: 640px)
+  section.foodbanks
+    //height: auto
+    .foodbank-process
+      margin: auto
+      li
+        width: 100%
+
+    .process-col
+      border-left: none
+      display: block
+
+    .logocontainer
+      width: 100%
+      margin: auto
+      //background-color: pink
+
+    .home-leadout
+      position: relative
+      top: 0px
+      padding-bottom: 20px
+      font-size: 33px
+      text-align: left
+
+    .desktop-cta
+      display: none
+
+    .mobile-cta
+      display: block
+
+    .mob-btn
+      display: block
+
+    h2
+      text-align: left
+      margin-top: 0px
+      font-size: 40px
+
+    li:before
+      margin-top: 40px
+    .home-cta
+      margin: auto
+      clear: both
+
+
+
+    .foodanklogo
+      display: none
+
+
+    .foodanklogomob
+      margin: auto
+      width: 80%
+      //height: 90px
+      margin-right: 10px
+      margin-top: 50px
+      //margin-bottom: 0px
+      display: block
+      //background-color: blue
+
+    #mob-lead
+      display: block
+    #desk-lead
+      display: block
+      text-align: left
+      float: none
+      width: 100%
+      margin-bottom: 10px
+
+    #firstcolumn
+      margin-top: 80px
+
+    .mobile-blurb
+      display: block
+
+    .drop-off-point
+      float: none
+      width: 100%
+      padding: 0px
+      position: relative
+      //margin-right: 5px
+      ul, li
+        width: 190px
+        //position: relative
+      h5
+        color: $blue-color
+        font-size: 18px
+        padding-bottom: 0px
+      ul
+        height: 350px
+        background-color: $orange-color
+        position: relative
+      a
+        position: absolute
+        bottom: 10px
+        left: 58px
+
+
+
+    .bottom
+      width: 100%
+      float: none
+
+
+      ul
+        margin: auto
+
+      .right
+        margin: auto
+        margin-bottom: 60px

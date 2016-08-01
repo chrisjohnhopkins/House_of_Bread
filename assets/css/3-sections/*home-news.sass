@@ -1,0 +1,199 @@
+section.news
+  background:
+    color: #eee
+  position: relative
+
+  //.box
+    width: 100%
+    height: 30px
+    background-color: blue
+    border-radius: 3px
+    position: relative
+    top: 3em
+    left: 230px
+    padding: 10px
+    text-align: center
+
+  //.box::after
+    content: " "
+    width: 0px
+    height: 0px
+    border-top: 10px solid blue
+    border-right: 10px solid transparent
+    border-left: 10px solid transparent
+    border-bottom: 10px solid transparent
+    position: absolute
+    left: 50%
+    top: 100%
+    //margin-top: -10px
+
+
+
+  .article-wrap
+    //margin-right: 20px
+    //text-align: center
+    width: 50vw
+    max-width: 260px
+    margin: auto
+
+  //.articles
+    margin: auto
+  .main-story
+    margin: auto
+    //box-sizing: inherit
+    max-width: 260px
+    //position: relative
+    display: block
+    background-color: white
+    border-radius: 3px
+    margin-bottom: 50px
+    margin-right: auto
+    margin-left: auto
+
+  .main-article-thumb
+    height: 250px
+    width: 100%
+    background:
+      image: url(/assets/img/hands.jpg)
+      size: cover
+      //position: center
+    position: relative
+    display: block
+    float: left
+    margin-bottom: 10px
+
+  .main-headline
+    font-weight: bold
+    font-size: 28px
+    line-height: 90%
+
+  .headline
+    font-weight: bold
+    font-size: 28px
+
+  .main-date
+    position: relative
+    top: 53px
+    text-align: right
+    //margin-right: 5px
+    //bottom: 5px
+    font-size: 12px
+    top: 90%
+
+
+
+  .date
+    position: relative
+    //top: 53px
+    text-align: right
+    margin-right: 5px
+    //bottom: 5px
+    font-size: 12px
+
+  .line-seperator
+    height: 1px
+    width: 70%
+    margin: auto
+    //background: #717171
+    border-bottom: 1px dashed #313030
+
+
+
+
+
+
+  .story
+    margin: auto
+    //box-sizing: inherit
+    width: 90%
+    max-width: 560px
+    //position: relative
+    display: block
+    background-color: white
+    border-radius: 3px
+    margin-bottom: 10px
+    margin-right: auto
+    margin-left: auto
+
+
+    &:last-child
+      margin-bottom: 30px
+
+
+  //.story
+    width: 280px
+    border: 1px solid black
+    padding: 0
+
+
+
+  ul
+    list-style-type: none
+    //width: 560px
+    padding: 0
+    margin: auto
+
+  //a
+    font: bold 20px/1.5
+
+  li
+    text-align: left
+
+  //.article-thumb
+    height: 100px
+    width: 100px
+    background:
+      image: url(/assets/img/hotmeals2.png)
+    position: relative
+    display: block
+    float: left
+
+  li
+    padding: 10px
+    overflow: auto
+    transition: all 0.15s ease-in-out
+    box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.3)
+    border-radius: 3px
+    background-color: rgba(255, 255, 255, 0.92)
+    color: #333
+
+
+  li:hover
+    background: #eee
+    cursor: pointer
+    box-shadow: 0px 5px 14px rgba(0,0,0,0.4)
+
+
+  .col-1
+    align-items: center
+    margin: auto
+
+  //.col-2
+    align-items: center
+    margin: auto
+
+  .home-cta
+    color: #f7941e
+    margin-bottom: 50px
+
+  .twitter-timeline
+    width: 260px
+    height: 200px
+
+
+  .col-2
+    max-width: 700px
+
+
+
+
+  //Typography
+
+  .home-leadout
+    color: #118cc1
+    font-size: 35px
+    text-align: center
+
+  .highlightorange
+    color: #f7941e
+    font-weight: bold

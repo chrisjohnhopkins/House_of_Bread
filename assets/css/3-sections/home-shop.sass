@@ -1,0 +1,152 @@
+section.shop
+  background:
+    color: #118cc1
+  height: auto
+
+
+  .perriscope
+    height: 320px
+    width: 320px
+    border-radius: 50%
+    background:
+      color: rgba(17, 140, 193, 0.6)
+      //image: url(/assets/img/jacket3.png)
+      position: center 130px
+      margin: auto
+      repeat: no-repeat
+      attachment: fixed
+    margin: auto
+    position: relative
+    display: block
+    transition: all 0.3s ease-in-out
+    overflow: hidden
+
+    &:hover
+      background:
+        color: rgba(17, 140, 193, 0.8)
+
+  .tint
+    height: 320px
+    width: 320px
+    border-radius: 50%
+    background:
+      color: rgba(0, 0, 0, 0.6)
+      //image: url(/assets/img/jacket.png)
+      //position: center 50px
+      //repeat: no-repeat
+      //attachment: fixed
+    margin: auto
+    display: table
+    position: absolute
+      top: 0
+      bottom: 0
+      left: 0
+      right: 0
+
+  .jacket
+    height: 320px
+    width: 320px
+    background:
+      image: url(/assets/img/jacket2.png)
+      repeat: no-repeat
+      //color: pink
+    //border-radius: 50%
+    margin: auto
+    position: relative
+    top: 670px
+    right: -10px
+    //z-index: 10
+
+  .promotional-message
+    height: 320px
+    text-align: center
+    display: table-cell
+    vertical-align: middle
+    color: white
+    font-size: 32px
+    position: relative
+    //top: 65px
+
+
+    .perriscope-cta
+      border: 1px solid white
+      border-radius: 2%
+      color: white
+      font-size: 20px
+      font-weight: bold
+      display: block
+      width: 100px
+      margin: auto
+      padding: 5px
+      margin-top: 20px
+      transition: all 0.3s ease-in-out
+      background-color: rgba(17, 140, 193, 0.6)
+
+      &:hover
+        background-color: white
+        color: black
+        border: 1px solid black
+        background-color: rgba(17, 140, 193, 0.8)
+
+    strong
+      display: block
+      font-size: 18px
+    span
+      font-weight: normal
+      font-style: italic
+      color: rgba(255, 255, 255, 0.6)
+
+
+  .home-cta-shop
+    width: 80%
+    margin: auto
+    margin-top: 50px
+    margin-bottom: 90px
+    color: #118cc1
+    font-size: 24px
+    display: block
+    background: white
+    box-shadow: 0px 3px 10px rgba(0,0,0,0.2)
+    text-align: center
+    padding: 0.4em 0
+    line-height: 1.25
+    transition: all 0.15s ease-in-out
+
+    &:hover
+      box-shadow: 0px 5px 14px rgba(0,0,0,0.4)
+
+  //typography
+
+  .home-leadout
+    font-size: 30px
+    color: #f7941e
+    text-align: center
+    padding-bottom: 20px
+    margin-top: 0px
+    text-align: center
+
+  .emphasise
+    color: white
+    font-style: italic
+
+@media (max-width: 775px)
+
+  section.shop
+
+    .jacket
+      top: 810px
+      height: 280px
+      width: 280px
+      right: 10px
+
+    .perriscope
+      height: 280px
+      width: 280px
+
+    .tint
+      height: 280px
+      width: 280px
+
+    .promotional-message
+      height: 280px
+      font-size: 28px

@@ -1,0 +1,9 @@
+group :jekyll_plugins do
+  gem "jekyll_reading_time"
+  gem "RedCloth"
+  gem 'jekyll-tagging'
+  gem 'redcarpet'
+  gem 'jekyll-feed'
+end
+
+source 'https://rubygems.org'

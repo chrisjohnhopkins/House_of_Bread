@@ -1,0 +1,109 @@
+<section class="newsandevents">
+
+  <div class="flex flex--center">
+    <div class="col-2">
+
+    <h2 class="heading">...Read our Latest News...</h2>
+
+    <a href="/feed.xml"><img src="/assets/img/rss.svg" style="height: 50px" "width: 50px" class="subscribe"/><p class="center">Subscribe</p></a>
+
+      <div id="carousel" class="carousel col-md-12 ">
+
+        {% for post in site.categories.news %}
+
+        <div class="item one">
+          <a href="{{ post.url }}">
+            <img src="{{post.cover}}" style="width: 100%" align="center"/>
+              <div class="post-info">
+                <div class="titlespace">
+                  <h2 class="title">{{ post.title }}<p class="date">{{ post.date | date: '%B %d, %Y' }}</p></h2>
+                </div>
+                <div class="excerptspace">
+                  <p class="excerpt">{{ post.excerpt }}</p>
+                </div>
+              </div>k
+          </a>
+
+        </div>
+
+
+
+        {% endfor %}
+
+      </div>
+
+      <a class="home-cta" href="#">See All News</a>
+
+      <h2 class="heading">...Upcoming Events...</h2>
+
+      {% for post in site.categories.events %}
+      {% assign curr_date = site.time | date: "%Y-%m-%d" %}
+      {% if curr_date < post.expires %}
+
+      <ul>
+        <li class="post">
+          <a href="{{ post.url }}">
+            <div class="blog-heading">
+              <h2 class="title">{{ post.title }}</h2>
+              <h5>{{ post.venue }}, <span class="date">{{ post.eventdate | date: '%B %d, %Y' }}</span></h5>
+            </div>
+            <img src="{{post.cover}}" style="width: 140px" align="center" class="post-image"/>
+            <p class="excerpt"> {{ post.excerpt }} </p>
+          </a>
+        </li>
+
+
+      {% endif %}
+      {% endfor %}
+
+      <h2 class="heading">...Weekly Events...</h2>
+
+      {% for post in site.categories.WeeklyEvents %}
+
+      <ul>
+        <li class="post">
+          <a href="{{ post.url }}">
+            <div class="blog-heading">
+              <h2 class="title">{{ post.title }}</h2>
+              <h5>{{ post.venue }}, <span class="date">{{ post.eventdate | date: '%B %d, %Y' }}</span></h5>
+            </div>
+            <img src="{{post.cover}}" style="width: 140px" align="center" class="post-image"/>
+            <p class="excerpt"> {{ post.excerpt }} </p>
+          </a>
+        </li>
+
+      {% endfor %}
+
+      <a href="/blog.html">Blog</a>
+
+      <h2 class="heading">...Podcasts...</h2>
+
+      {% for post in site.categories.podcasts %}
+
+      <ul>
+        <li>
+          <a href="{{ post.url }}"><h5>{{ post.title }}</h5></a>
+        </li>
+      </ul>
+
+
+      {% endfor %}
+
+
+
+
+
+
+
+
+      <script type="text/javascript">
+          $(document).ready(function(){
+            $('.carousel').slick({
+              autoplay: true;
+              arrows: true;
+            });
+          });
+        </script>
+    </div>
+  </div>
+</section>

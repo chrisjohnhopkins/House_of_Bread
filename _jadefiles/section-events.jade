@@ -1,0 +1,31 @@
+section.events#events
+  .flex.flex--center
+    .col-2
+      p.home-leadout ...House of Bread Events...
+
+      a(href="").rss
+
+      h3 Up Coming Events...
+
+      ul
+        {% for post in site.categories.events %}
+        {% assign curr_date = site.time | date: "%Y-%m-%d" %}
+        {% if curr_date < post.expires %}
+        li
+          .post
+            .post-title
+              <a href="{{ post.url }}"><h2 class="title">{{ post.title }}</h2>
+              <h5>{{ post.venue }}, <span class="date">{{ post.eventdate | date: '%B %d, %Y' }}</span></h5>
+            .post-data
+              .post-image
+                <img src="{{post.cover}}" style="width: 140px" align="center" class="post-image"/>
+              .post-excerpt
+                <p class="excerpt"> {{ post.excerpt }} </p></a>
+        {% endif %}
+        {% endfor %}
+
+      h3 Weekly Events...
+
+  .flex.flex--center
+    .col-1
+      a(href="").home-cta HoB Events

@@ -1,0 +1,172 @@
+section.news
+  background:
+    color: #eee
+  position: relative
+  height: 1000px
+
+  ul
+    list-style: none
+  .rss
+    background:
+      image: url(/assets/img/rss.svg)
+      size: contain
+      color: white
+    height: 50px
+    width: 50px
+    border-radius: 50%
+    border: 1px white solid
+    margin: auto
+    display: block
+    box-shadow: 0px 3px 10px rgba(0,0,0,0.2)
+
+    &:hover
+      box-shadow: 0px 5px 14px rgba(0,0,0,0.4)
+
+  .post-excerpt
+    display: block
+    float:right
+    padding-top: 10px
+    //background-color: #118cc1
+    font-size: 15px
+    color: white
+
+  .title
+    color: white
+    font-size: 25px
+    padding-top: 10px
+    //margin-right: 0px
+    margin-left: 10px
+    height: 0px
+    margin-top: 0px
+    margin-bottom: 10px
+    width: 500px
+
+  p, a
+    color: white
+    margin-right: 10px
+
+
+  .post-image
+    float: left
+    padding-left: 5px
+    padding-right: 5px
+    padding-top: 8px
+    //padding-bottom: 50px
+    clear: both
+    position: relative
+    height: auto
+
+
+
+
+  .post
+    background-color: rgba(17, 140, 193, 1)
+    display: block
+    width: 100%
+    height: 200px
+    margin-bottom: 30px
+    position: relative
+    margin-top: 30px
+    color: white
+
+  .date
+    position: relative
+    float: right
+    margin-bottom: 0px
+    margin-right: 18px
+    bottom: -30px
+    font-style: italic
+    color: rgba(255, 255, 255, 0.6)
+
+
+
+  .post-data
+    background-color: rgba(17, 140, 193, 0)
+    height: 110px
+
+
+
+  .post-title
+    background-color: #f7941e
+    width: auto
+    height: 80px
+    position: relative
+
+  .home-cta
+    color: #118cc1
+    margin-bottom: 50px
+    width: 100%
+
+
+
+
+
+  //Typography
+
+  .home-leadout
+    color: #118cc1
+    font-size: 35px
+    text-align: center
+
+  .highlightorange
+    color: #f7941e
+    font-weight: bold
+
+  @media (max-width: 640px)
+    .title
+      margin: auto
+      font-size: 15px
+      text-align: center
+      width: 250px
+      height: auto
+
+
+    .post
+      width: 250px
+      //margin: auto
+      margin: auto
+      margin-bottom: 20px
+      height: 400px
+
+    .post-title
+      background-color: #f7941e
+      width: 250px
+      height: auto
+      position: relative
+
+    .date
+      position: relative
+      float: none
+      margin-bottom: 0px
+      margin-right: 18px
+      bottom: 0px
+      text-align: center
+
+
+
+    .post-excerpt
+      display: block
+      float: none
+      padding-top: 5px
+      //background-color: #118cc1
+      font-size: 15px
+      color: white
+      text-align: center
+      height: auto
+
+    .post-image
+      float: none
+      padding-left: 0px
+      padding-right: 0px
+      padding-top: 0px
+      //padding-bottom: 50px
+      //clear: both
+      position:
+      height: auto
+      margin: auto
+      display: block
+      margin-top: 30px
+
+  @media (max-width: 640px)
+    .post
+      right: 15px
